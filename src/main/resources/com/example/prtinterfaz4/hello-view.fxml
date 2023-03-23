@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="451.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prtinterfaz4.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label layoutX="51.0" layoutY="67.0" text="Nombre" />
+       <TextField fx:id="fieldNombre" layoutX="45.0" layoutY="95.0"/>
+      <Label layoutX="51.0" layoutY="155.0" text="Apellidos" />
+       <TextField fx:id="fieldApellidos" layoutX="45.0" layoutY="186.0" />
+      <Label layoutX="51.0" layoutY="253.0" text="Edad" />
+      <TextField fx:id="fieldEdad" layoutX="45.0" layoutY="288.0" />
+       <Button fx:id="agregarPersona" layoutX="67.0" layoutY="361.0" mnemonicParsing="false" text="Agregar Persona" onAction="#meterPersona" />
+      <TableView fx:id="tabla" layoutX="246.0" layoutY="51.0" prefHeight="338.0" prefWidth="330.0">
+        <columns>
+            <TableColumn fx:id="tNombre" prefWidth="110.0" text="Nombre" />
+            <TableColumn fx:id="tApellidos" prefWidth="110.0" text="Apellidos" />
+            <TableColumn fx:id="tEdad" prefWidth="110.0" text="Edad" />
+        </columns>
+      </TableView>
+      <Button fx:id="modificar" layoutX="308.0" layoutY="406.0" mnemonicParsing="false" text="Modificar" />
+      <Button fx:id="eliminar" layoutX="454.0" layoutY="406.0" mnemonicParsing="false" text="Eliminar" />
+   </children>
+</AnchorPane>
